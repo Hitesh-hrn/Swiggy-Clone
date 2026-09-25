@@ -12,7 +12,7 @@ export default function TopRest() {
     }
 
     const prevSlide = () => {
-        if (slide == 0) return
+        if (slide === 0) return
         setSlide(slide - 3)
     }
 
@@ -187,9 +187,9 @@ export default function TopRest() {
                 </div>
                 <div className='flex'>
                     <div
-                        className={`flex justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2 ${slide == 0 ? "opacity-30 cursor-not-allowed" : "cursor-pointer"
+                        className={`flex justify-center items-center w-[30px] h-[30px] bg-[#e2e2e7] rounded-full mx-2 ${slide === 0 ? "opacity-30 cursor-not-allowed" : "cursor-pointer"
                             }`}
-                        onClick={slide == 0 ? null : prevSlide}
+                        onClick={slide ===0 ? null : prevSlide}
                     >
                         <FaArrowLeft />
                     </div>
