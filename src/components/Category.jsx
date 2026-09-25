@@ -34,7 +34,7 @@ export default function Category() {
     }
 
     const prevSlide = () => {
-        if (slide == 0) return false;
+        if (slide === 0) return false;
         setSlide(slide - 3);
     }
 

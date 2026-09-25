@@ -9,7 +9,6 @@ export default function OnlineDelivery() {
 
     const componentRef = useRef(null);
     const [isAtTop, setIsAtTop] = useState(false);
-    const [filterOpen, setFilterOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
